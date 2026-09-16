@@ -1,0 +1,11 @@
+[
+{%for product in products%}
+{
+    "name" : {{product.name}},
+     "article" : {{product.article}},
+      "price" : {{product.price}},
+}
+{%if not forloop.last %}, {%endif%}
+
+{%endfor%}
+]
